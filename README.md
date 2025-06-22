@@ -4,7 +4,7 @@ A lightweight React + Vite web app that lets users log in, view profile info, an
 
 ## Features
 
-- Mock login screen (no real auth)
+- Mock login screen
 - Dashboard with:
   - Greeting & quick-stats cards
   - User profile section
@@ -17,6 +17,7 @@ A lightweight React + Vite web app that lets users log in, view profile info, an
 - [Node.js](https://nodejs.org/) ≥ 16 (includes `npm`)
 
 _Check your versions:_
+
 ```bash
 node -v    # should print v16.x or newer
 npm -v     # npm 8.x or newer
@@ -25,20 +26,24 @@ npm -v     # npm 8.x or newer
 ## Getting Started
 
 1. **Clone / download the repo** (skip if you already have the folder).
+
    ```bash
    git clone <repo-url>
    cd devbox-developer-portal
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
+
    Vite will print a local URL such as `http://localhost:5173`. Open it in your browser – the page reloads automatically on file changes.
 
 4. **Build for production**
@@ -72,15 +77,3 @@ npm -v     # npm 8.x or newer
 - **Change mock data** – edit `src/mockData.js`.
 - **Adjust styles** – modify `src/index.css`. Media-query at bottom handles mobile tweaks.
 - **Add new components** – place them in `src/components/` and import into `App.jsx` or where needed.
-
-## Troubleshooting
-
-- If `npm run dev` fails on Windows **WSL/PowerShell**, try:
-  ```bash
-  set "BROWSER=none" && npm run dev
-  ```
-- Delete `node_modules` and reinstall if you hit module resolution errors.
-
-## License
-
-MIT (for assignment/demo use)
